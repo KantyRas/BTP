@@ -1,0 +1,1 @@
+<p>Test. <?php echo $numero;?></p>

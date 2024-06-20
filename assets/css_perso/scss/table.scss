@@ -1,0 +1,72 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$border-color: #ddd;
+$header-bg-color: #f8f9fa;
+$row-hover-color: #f1f1f1;
+$table-padding: 15px;
+$border-radius: 5px;
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    min-width: 400px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    thead {
+        tr {
+            background-color: $header-bg-color;
+            color: $primary-color;
+            text-align: left;
+            font-weight: bold;
+        }
+    }
+
+    th,
+    td {
+        padding: $table-padding;
+        border: 1px solid $border-color;
+    }
+
+    tbody {
+        tr {
+            border-bottom: 1px solid $border-color;
+
+            &:nth-of-type(even) {
+                background-color: $row-hover-color;
+            }
+
+            &:last-of-type {
+                border-bottom: 2px solid $primary-color;
+            }
+
+            &:hover {
+                background-color: lighten($row-hover-color, 10%);
+            }
+        }
+    }
+
+    th,
+    td {
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    a {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            color: $secondary-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+@import "entete.scss";

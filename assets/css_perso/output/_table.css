@@ -1,0 +1,88 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  min-width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table thead tr {
+  background-color: #f8f9fa;
+  color: #3498db;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th,
+table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f1f1f1;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #3498db;
+}
+
+table tbody tr:hover {
+  background-color: white;
+}
+
+table th:last-child,
+table td:last-child {
+  text-align: center;
+}
+
+table a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+table a:hover {
+  color: #2ecc71;
+  text-decoration: underline;
+}
+
+.entete1 {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: #333;
+}
+
+.entete1 h4,
+.entete1 h5 {
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.entete1 h4:first-of-type,
+.entete1 h5:first-of-type {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.entete1 h4:first-of-type {
+  color: #2ecc71;
+}
+
+.entete1 h5 {
+  color: #1a1a1a;
+}
+
+/*# sourceMappingURL=_table.css.map */

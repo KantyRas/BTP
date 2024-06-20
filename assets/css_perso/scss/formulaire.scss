@@ -1,0 +1,56 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$border-color: #ddd;
+$input-padding: 10px;
+$border-radius: 5px;
+
+@mixin box-shadow($color) {
+    -webkit-box-shadow: 0px 0px 10px 0px $color;
+    -moz-box-shadow: 0px 0px 10px 0px $color;
+    box-shadow: 0px 0px 10px 0px $color;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    @include box-shadow(rgba(0, 0, 0, 0.1));
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: $primary-color;
+    }
+
+    input[type="file"],
+    input[type="text"],
+    input[type="hidden"],
+    select {
+        display: block;
+        width: 100%;
+        padding: $input-padding;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+        margin-bottom: 20px;
+    }
+
+    button[type="submit"] {
+        display: inline-block;
+        padding: $input-padding;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+        border-radius: $border-radius;
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $secondary-color;
+        }
+    }
+}
